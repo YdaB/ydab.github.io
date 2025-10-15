@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Виджет Росэлторг</title>
+    <!-- Добавим базовую стилизацию для примера -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        /* Стили для виджета можно настроить в зависимости от его внутренней реализации */
+        #cv-roseltorg-widget {
+            margin-top: 20px;
+            /* Примерные стили, могут потребоваться изменения в зависимости от виджета */
+            width: 100%;
+            min-height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Добро пожаловать на Росэлторг. Кандидаты!</h1>
+        <p>Здесь вы можете использовать сервис для поиска работы.</p>
+
+        <!-- Вставка виджета -->
+        <div 
+          id="cv-roseltorg-widget"
+          data-url="https://master-cv.roseltorg.tech/"
+          data-type="swiper"
+          data-params="pageNum=1&pageSize=10&sortOrder=PubDESC&widgetType=swiper" 
+        ></div>
+
+        <script type="module" src="https://master-cv.roseltorg.tech/widget/widget.js"></script>
+        <!-- /Вставка виджета -->
+
+    </div>
+
+</body>
+</html>
